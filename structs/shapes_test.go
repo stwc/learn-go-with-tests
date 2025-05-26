@@ -2,10 +2,6 @@ package structs
 
 import "testing"
 
-type Shape interface {
-	Area() float64
-}
-
 func TestPerimeter(t *testing.T) {
 	got := Perimeter(Rectangle{10.0, 10.0})
 	want := 40.0
